@@ -21,6 +21,14 @@ public class Fridge {
         return narocnost;
     }
 
+    public String getZnacka() {
+        return znacka;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
     public void printInfo() {
         System.out.print(getRokVyroby() + ": ");
         switch (narocnost) {

@@ -35,13 +35,9 @@ public class Items {
      */
     public void printInfo() {
         System.out.println("-----INFO O LEDNICKACH-----");
-        if (items != null) {
             for (Fridge fridge : items) {
-                if (fridge != null) {
                     fridge.printInfo();
-                }
             }
-        }
         System.out.println("-----");
     }
 
@@ -50,11 +46,9 @@ public class Items {
      */
     public void printNarocnostA() {
         System.out.println("Ledničky s náročností A:");
-        if (items != null) {
             for (Fridge fridge : items) {
-                if (fridge != null && fridge.getNarocnost() == Narocnost.A) {
+                if (fridge.getNarocnost() == Narocnost.A) {
                     fridge.printInfo();
-                }
             }
         }
     }
@@ -63,7 +57,7 @@ public class Items {
      * Tato metoda vypíše počet všech ledniček
      */
     public void printPocetPolozek() {
-        System.out.println("Počet všech ledniček: " + (items != null ? items.length : 0));
+        System.out.println("Počet všech ledniček: " + (items.length));
     }
 
     /**
@@ -71,12 +65,8 @@ public class Items {
      */
     public void printZajimavosti() {
         int[] pocty = new int[Narocnost.values().length];
-        if (items != null) {
-            for (Fridge fridge : items) {
-                if (fridge != null) {
-                    pocty[fridge.getNarocnost().ordinal()]++;
-                }
-            }
+        for (Fridge fridge : items) {
+            pocty[fridge.getNarocnost().ordinal()]++;
         }
         System.out.println("Počty ledniček dle náročnosti:");
         for (int i = 0; i < Narocnost.values().length; i++) {

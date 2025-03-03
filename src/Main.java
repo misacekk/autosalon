@@ -6,6 +6,9 @@ import elektroshop.Items;
 import library.Book;
 import library.Library;
 import moviestore.MovieDatabase;
+import elektroshop.Fridge;
+import elektroshop.Items;
+import elektroshop.Narocnost;
 
 public class Main {
 
@@ -49,6 +52,9 @@ public class Main {
                     sc.nextLine();
                     items.addItems(pocet);
                     items.printInfo();
+                    items.printNarocnostA();
+                    items.printPocetPolozek();
+                    items.printZajimavosti();
                     break;
                 case "5":
                     Library library = new Library();
