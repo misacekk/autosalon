@@ -9,10 +9,14 @@ public class Items {
      * @param count - pozadovany pocet lednicek
      */
     public void addItems(int count) {
-      //  items = new ....
+      items = new Fridge[count];
         for (int i=0; i<count; i++){
-            //nacti od uzivatele míru spotreby a rok výroby ledničky
-            //pridej lednicku do pole lednicek
+           System.out.println("Zadej značku ledničky");
+           String znacka = sc.nextLine;
+            System.out.println("Zadej model ledničky");
+            String model = sc.nextLine;
+            System.out.println("Zadej narocnost ledničky(A-G)");
+            String narocnost = sc.nextLine;
         }
 
     }
@@ -25,7 +29,7 @@ public class Items {
      */
     public void printInfo(){
         System.out.println("-----INFO O LEDNICKACH-----");
-        //sem dopln kod
+        fridge.printInfo
         System.out.println("-----");
     }
 }
