@@ -6,6 +6,9 @@ import elektroshop.Items;
 import library.Book;
 import library.Library;
 import moviestore.MovieDatabase;
+import elektroshop.Fridge;
+import elektroshop.Items;
+import elektroshop.Narocnost;
 
 public class Main {
 
