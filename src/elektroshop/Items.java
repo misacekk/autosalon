@@ -64,13 +64,37 @@ public class Items {
      * Tato metoda vypíše počet ledniček jednotlivých energetických náročností
      */
     public void printZajimavosti() {
-        int[] pocty = new int[Narocnost.values().length];
-        for (Fridge fridge : items) {
-            pocty[fridge.getNarocnost().ordinal()]++;
-        }
-        System.out.println("Počty ledniček dle náročnosti:");
-        for (int i = 0; i < Narocnost.values().length; i++) {
-            System.out.println(Narocnost.values()[i] + ": " + pocty[i]);
-        }
+        int A=0;
+        int B=0;
+        int C=0;
+        int D=0;
+        int E=0;
+        int F=0;
+        int G=0;
+     for (Fridge fridge : items) {
+     switch (fridge.getNarocnost()){
+         case A:A++;
+            break;
+         case B:B++;
+            break;
+         case C:C++;
+            break;
+         case D:D++;
+            break;
+         case E:E++;
+            break;
+         case F:F++;
+            break;
+         case G:G++;
+            break;
+     }
+     }
+        System.out.println("Počet ledniček A="+A);
+        System.out.println("Počet ledniček B="+B);
+        System.out.println("Počet ledniček C="+C);
+        System.out.println("Počet ledniček D="+D);
+        System.out.println("Počet ledniček E="+E);
+        System.out.println("Počet ledniček F="+F);
+        System.out.println("Počet ledniček G="+G);
     }
 }
