@@ -38,12 +38,13 @@ public class Main {
                     knihkupectvi.printInfo();
                     break;
                 case "3":
-                    Film film = new Film();
+                    Film film = new Film("Transformers",2007);
                     System.out.println("Kolik si prejete pridat hercu?");
                     pocet = sc.nextInt();
                     sc.nextLine();
                     film.addActors(pocet);
                     film.printInfo();
+                    film.printPocetHercu();
                     break;
                 case "4":
                     Items items = new Items();
